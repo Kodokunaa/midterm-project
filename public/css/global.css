@@ -1,0 +1,676 @@
+/* Midterm-style Global CSS - Enhanced Design */
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* Base styles */
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+/* Midterm Button - Enhanced */
+.midterm-btn {
+    background-color: #ff385c;
+    color: white;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    padding: 12px 20px;
+}
+
+.midterm-btn:hover {
+    background-color: #d93250;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 56, 92, 0.25);
+}
+
+.midterm-btn:active {
+    transform: translateY(0);
+}
+
+/* Midterm Card - Enhanced with subtle shadows */
+.midterm-card {
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    transition: all 0.25s ease;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.midterm-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+/* Midterm Edit Button - Enhanced */
+.midterm-edit {
+    background-color: #222222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    padding: 10px 18px;
+}
+
+.midterm-edit:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+/* Midterm Delete Button - Enhanced */
+.midterm-delete {
+    background-color: #fff;
+    color: #717171;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    padding: 10px 18px;
+}
+
+.midterm-delete:hover {
+    border-color: #ff385c;
+    color: #ff385c;
+    background: #fff5f6;
+}
+
+/* Midterm Input - Enhanced with better focus */
+.midterm-input {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 14px 16px;
+    width: 100%;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    background: #fafafa;
+    color: #222222;
+    font-weight: 500;
+}
+
+.midterm-input:focus {
+    border-color: #222222;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.1);
+    background: white;
+}
+
+.midterm-input::placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+/* Midterm Select - Enhanced */
+.midterm-select {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 14px 16px;
+    width: 100%;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    background-color: #fafafa;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #222222;
+    font-weight: 500;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23717171' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 44px;
+}
+
+.midterm-select:focus {
+    border-color: #222222;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.1);
+    background-color: white;
+}
+
+/* Midterm Logo - Enhanced */
+.midterm-logo {
+    color: #ff385c;
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.midterm-logo::before {
+    content: "🏠";
+    font-size: 24px;
+}
+
+/* Midterm Link */
+.midterm-link {
+    color: #717171;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.midterm-link:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+/* Midterm Form Card - Enhanced */
+.midterm-form-card {
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+}
+
+.midterm-form-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradient Avatar - Enhanced */
+.avatar-gradient {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Section Header - Enhanced */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222222;
+    letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #717171;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* User Grid - Enhanced */
+.user-grid {
+    display: grid;
+}
+
+/* User Card - Enhanced */
+.user-card {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    gap: 24px;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* Avatar Circle - Enhanced */
+.avatar-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+/* User Name - Enhanced */
+.user-name {
+    font-weight: 600;
+    color: #222222;
+    font-size: 16px;
+}
+
+/* User Details - Enhanced */
+.user-details {
+    font-size: 14px;
+    color: #717171;
+    margin-top: 2px;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Form Group - Enhanced */
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #484848;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+}
+
+/* Empty State - Enhanced */
+.empty-state {
+    text-align: center;
+    padding: 80px 24px;
+    background: white;
+    border-radius: 20px;
+    border: 1px dashed #ddd;
+}
+
+.empty-state-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.empty-state-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.empty-state-text {
+    color: #717171;
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+/* Form Page Header - Enhanced */
+.form-page-header {
+    background: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.form-page-header > div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-page-header-content {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Form Page Main - Enhanced */
+.form-page-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    background: #f7f7f7;
+}
+
+/* Form Title - Enhanced */
+.form-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    letter-spacing: -0.02em;
+    color: #222222;
+}
+
+/* Full height layout */
+.layout-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Submit Button - Enhanced */
+.midterm-btn.w-full.py-3.text-base {
+    padding: 16px 24px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+/* Form Grid - Two Column Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.form-column .form-group {
+    margin-bottom: 16px;
+}
+
+/* Checkbox Custom */
+.checkbox-custom {
+    accent-color: #ff385c;
+}
+
+/* Max Width Container for form */
+.max-w-28rem {
+    max-width: 28rem;
+    width: 100%;
+}
+
+/* Page Background Enhancement */
+body.p-6.md\:p-10 {
+    background: #f7f7f7;
+    padding: 32px;
+}
+
+@media (max-width: 768px) {
+    body.p-6.md\:p-10 {
+        padding: 16px;
+    }
+    
+    .max-w-4xl {
+        max-width: 100%;
+    }
+    
+    .section-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 16px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .section-subtitle {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+    
+    .section-header .midterm-btn {
+        font-size: 13px;
+        padding: 10px 16px;
+        white-space: nowrap;
+    }
+    
+    .user-card {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .action-buttons {
+        width: 100%;
+    }
+    
+    .midterm-edit, .midterm-delete {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .form-page-header {
+        padding: 0;
+    }
+    
+    .form-page-header .max-w-4xl {
+        padding: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .midterm-logo {
+        font-size: 24px;
+    }
+    
+    .form-page-main {
+        padding: 24px 16px;
+    }
+    
+    .midterm-form-card {
+        padding: 24px 20px;
+    }
+    
+    .form-title {
+        font-size: 20px;
+    }
+    
+    /* Form Grid - Stack on mobile */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .avatar-circle {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+    }
+    
+    .user-name {
+        font-size: 15px;
+    }
+    
+    .user-details {
+        font-size: 13px;
+    }
+    
+    .dark-mode-toggle {
+        width: 40px;
+        height: 40px;
+        bottom: 16px;
+        right: 16px;
+    }
+}
+
+/* Dark Mode Toggle Button - Midterm Style */
+.dark-mode-toggle {
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #717171;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+    border-color: #222222;
+    color: #222222;
+    background: #f7f7f7;
+}
+
+.dark-mode-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Dark Mode Styles */
+.dark body,
+body.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark .midterm-card,
+.dark .midterm-form-card,
+.dark .empty-state {
+    background: #2d2d2d;
+    border-color: #404040;
+}
+
+.dark .section-header {
+    border-color: #404040;
+}
+
+.dark .section-title {
+    color: #ffffff;
+}
+
+.dark .section-subtitle {
+    color: #a0a0a0;
+}
+
+.dark .form-page-header {
+    background: #2d2d2d;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .midterm-logo {
+    color: #ff385c;
+}
+
+.dark .midterm-input,
+.dark .midterm-select {
+    background: #3d3d3d;
+    border-color: #505050;
+    color: #ffffff;
+}
+
+.dark .midterm-input:focus,
+.dark .midterm-select:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    background: #2d2d2d;
+}
+
+.dark .midterm-input::placeholder {
+    color: #808080;
+}
+
+.dark .form-label {
+    color: #d0d0d0;
+}
+
+.dark .form-title {
+    color: #ffffff;
+}
+
+.dark .midterm-link {
+    color: #a0a0a0;
+}
+
+.dark .midterm-link:hover {
+    color: #ffffff;
+}
+
+.dark .user-name {
+    color: #ffffff;
+}
+
+.dark .user-details {
+    color: #a0a0a0;
+}
+
+.dark .midterm-delete {
+    background: #3d3d3d;
+    border-color: #505050;
+    color: #a0a0a0;
+}
+
+.dark .midterm-delete:hover {
+    border-color: #ff385c;
+    color: #ff385c;
+    background: #3d2a2d;
+}
+
+.dark .form-page-main {
+    background: #1a1a1a;
+}
+
+.dark .empty-state {
+    border-color: #505050;
+}
+
+.dark .empty-state-title {
+    color: #ffffff;
+}
+
+.dark .empty-state-text {
+    color: #a0a0a0;
+}
+
+.dark .dark-mode-toggle {
+    border-color: #505050;
+    color: #a0a0a0;
+}
+
+.dark .dark-mode-toggle:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    background: #3d3d3d;
+}
+
+.dark body.p-6.md\:p-10 {
+    background: #1a1a1a;
+}
+
